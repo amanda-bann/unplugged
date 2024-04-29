@@ -86,13 +86,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* General Styles */
+/* Global Styles */
 
 html {
   font-size: 1rem;
 }
 
 body {
+  background-color: #202322;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   color: #e2e3ed;
@@ -102,6 +103,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding:0
 }
 
 a {
@@ -120,6 +123,7 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
+  margin: 20px 0;
 }
 
 p {
@@ -128,11 +132,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -158,6 +162,10 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -225,6 +233,10 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg) #333;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -273,6 +285,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url(../img/unplugged-retreat-features.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -456,8 +471,8 @@ input[type=button] {
    ========================================================================== */
 /*Tablet styles*/
 @media only screen and (min-width: 768px) {
-  /*General styles*/
 
+  /*General styles*/
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -474,7 +489,6 @@ input[type=button] {
   }
 
   /* Header */
-
   header {
     padding: 33px 0;
   }
@@ -501,6 +515,9 @@ input[type=button] {
   }
 
   /* Hero Area */
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -536,7 +553,7 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
@@ -550,6 +567,7 @@ input[type=button] {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -560,7 +578,6 @@ input[type=button] {
   }
 
   /* Footer */
-
   footer .content-wrapper {
     width: 65%
   }
